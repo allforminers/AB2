@@ -12,7 +12,7 @@ apt install git -y
 ```
 
 ```
-sudo apt install unzip
+sudo apt install unzip -y
 ```
 
 ```
