@@ -9,15 +9,6 @@ apt install git -y
 ```
 
 ```
-sudo apt-get install dos2unix -y
-```
-
-
-```
-sudo apt-get update && sudo apt-get install screen
-```
-
-```
 git clone https://github.com/allforminers/AB2.git
 
 chmod -R 777 AB2
@@ -71,15 +62,11 @@ firewall
 sudo ufw --force enable
 
 
-
-
 check status
 
 sudo ufw status
 
 ```
-
-
 
 after reboot server 
 
@@ -93,8 +80,6 @@ apt install ipset
 
 sudo apt-get update
 sudo apt-get install ipset iptables
-
-
 
 
 ```
