@@ -1,4 +1,7 @@
 ***********************************
+FOR UBUNTU 20
+***********************************
+
 ```
 sudo apt-get update && sudo apt-get upgrade -y
 
