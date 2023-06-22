@@ -49,12 +49,6 @@ sudo mv /root/doichain-cli /usr/bin/
 
 sudo chmod -R 777 /root
 
-
-sudo node init.js
-
-
-
-
 # NOMP
 
 cd nomp
