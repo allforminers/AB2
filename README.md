@@ -9,6 +9,10 @@ apt install git -y
 ```
 
 ```
+sudo apt install unzip
+```
+
+```
 git clone https://github.com/allforminers/AB2.git
 
 chmod -R 777 AB2
