@@ -1,11 +1,13 @@
 #!/bin/bash
 
 # Aktualizacja systemu
-sudo apt update
-sudo apt upgrade -y
+sudo apt install git -y
 
 # Aktualizacja github
-sudo apt install git -y
+sudo apt-get install dos2unix -y
+
+# Aktualizacja github
+sudo apt-get update && sudo apt-get install screen -y
 
 # Instalacja zależności NOMP
 sudo apt install -y build-essential curl git libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake -y
