@@ -1,28 +1,27 @@
 #!/bin/bash
 
-sudo chmod -R 777 /root
+# Aktualizacja systemu
+sudo apt update
+sudo apt upgrade -y
 
-chmod +x install.sh
+# Aktualizacja github
+sudo apt install git -y
 
+# Instalacja zależności NOMP
+sudo apt install -y build-essential curl git libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev automake -y
 
-
-
+# Aktualizacja common
+sudo apt-get update
+sudo apt-get install software-properties-common
 
 # Update package lists and install Redis
 sudo add-apt-repository ppa:chris-lea/redis-server -y
 sudo apt-get update
-sudo apt install npm -y
 sudo apt -y install redis-server -y
 
 # Modify Redis configuration to bind to localhost only
 sudo sed -i 's/bind 127.0.0.1 ::1/bind 127.0.0.1/g' /etc/redis/redis.conf
 
-# Install necessary dependencies
-sudo apt install nodejs node-gyp libssl1.0-dev libgmp-dev libevent-dev npm -y
-
-# Install n package and Node.js v12
-sudo npm install n -g
-sudo n v12
 
 # Install necessary libraries for Bitcoin
 sudo add-apt-repository ppa:bitcoin/bitcoin
@@ -38,11 +37,6 @@ sudo ufw allow 3032/tcp
 sudo ufw allow 3256/tcp
 sudo ufw allow 6379/tcp
 
-
-# Install npm packages and start Redis
-sudo npm install
-sudo redis-server --daemonize yes
-
 # Change to root directory and run init.js
 
 sudo mv /root/bitcoin-cli /usr/bin/
@@ -53,5 +47,31 @@ sudo mv /root/doichain-tx /usr/bin/
 sudo mv /root/doichaind /usr/bin/
 sudo mv /root/doichain-cli /usr/bin/
 
+sudo chmod -R 777 /root
+
+
 sudo node init.js
+
+
+
+
+# NOMP
+
+cd nomp
+
+# Instalacja Node.js (wymagana wersja 10.x.x)
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt install -y nodejs
+
+# Instalacja zależności NOMP
+npm update
+npm install
+
+# Uruchomienie NOMP
+node init.js
+
+
+
+
+
 
