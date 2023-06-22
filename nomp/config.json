@@ -30,10 +30,10 @@
     },
 
     "website": {
-        "enabled": true,
-        "host": "198.251.81.254",
+        "enabled": false,
+        "host": "100.000.81.254",
         "port": 80,
-        "stratumHost": "198.251.81.254",
+        "stratumHost": "100.011.81.254",
         "stats": {
             "updateInterval": 80,
             "historicalRetention": 43200,
