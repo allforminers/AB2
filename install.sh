@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Aktualizacja systemu
-sudo apt install git -y
-
 # Aktualizacja github
 sudo apt-get install dos2unix -y
 
