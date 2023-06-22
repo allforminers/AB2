@@ -21,6 +21,9 @@ sudo apt -y install redis-server -y
 # Modify Redis configuration to bind to localhost only
 sudo sed -i 's/bind 127.0.0.1 ::1/bind 127.0.0.1/g' /etc/redis/redis.conf
 
+# Modify
+sudo apt install npm -y
+
 
 # Install necessary libraries for Bitcoin
 sudo add-apt-repository ppa:bitcoin/bitcoin
