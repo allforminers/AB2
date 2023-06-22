@@ -1,0 +1,7 @@
+{
+  "name": "B",
+    "symbol": "B",
+    "algorithm": "sha256",
+        "version_mask": "20000000",
+        "enabled": true
+}
